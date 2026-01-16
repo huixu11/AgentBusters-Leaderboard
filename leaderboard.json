@@ -1,10 +1,10 @@
 [
   {
     "name": "Overall Performance",
-    "query": "SELECT participants.purple_agent AS id, ROUND(r.average_alpha_score, 0) AS \"Alpha Score\", r.num_tasks AS \"Tasks\", r.num_successful AS \"Passed\" FROM (SELECT participants, results[1] AS r FROM results) ORDER BY r.average_alpha_score DESC"
+    "query": "SELECT participants.purple_agent AS id, ROUND(r.overall_score.score, 1) AS \"Score\", r.overall_score.grade AS \"Grade\", r.evaluation_metadata.num_tasks AS \"Tasks\", r.evaluation_metadata.num_successful AS \"Passed\" FROM (SELECT participants, results[1] AS r FROM results) ORDER BY r.overall_score.score DESC"
   },
   {
-    "name": "Detailed Results",
-    "query": "SELECT participants.purple_agent AS id, r.ticker AS \"Ticker\", r.version AS \"Version\", ROUND(r.average_alpha_score, 0) AS \"Alpha Score\" FROM (SELECT participants, results[1] AS r FROM results) ORDER BY r.average_alpha_score DESC"
+    "name": "Section Breakdown",
+    "query": "SELECT participants.purple_agent AS id, ROUND(r.section_scores.knowledge_retrieval.score, 1) AS \"Knowledge\", ROUND(r.section_scores.analytical_reasoning.score, 1) AS \"Analysis\", ROUND(r.section_scores.options_trading.score, 1) AS \"Options\" FROM (SELECT participants, results[1] AS r FROM results) ORDER BY r.overall_score.score DESC"
   }
 ]
