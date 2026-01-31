@@ -1,6 +1,6 @@
 # FAB++ (Finance Agent Benchmark Plus Plus) Assessment Configuration
 # AgentBeats Competition 2026 - Team AgentBusters
-# Test run: 30 tasks with participant-controlled model settings
+# Test run with public_csv re-enabled
 
 [green_agent]
 # CIO-Agent Green Agent - FAB++ Evaluator
@@ -12,7 +12,7 @@ env = { OPENAI_API_KEY = "${OPENAI_API_KEY}", EVAL_DATA_REPO = "${EVAL_DATA_REPO
 # Submitters: Fill in your agent's agentbeats_id
 agentbeats_id = "019bc4dd-f03b-7a11-9e64-61fce92c8d95"
 name = "purple_agent"
-env = { OPENAI_API_KEY = "${OPENAI_API_KEY}" }
+env = { OPENAI_API_KEY = "${OPENAI_API_KEY}", TAVILY_API_KEY = "${TAVILY_API_KEY}" }
 
 [config]
 # Assessment configuration
@@ -21,15 +21,17 @@ conduct_debate = false
 timeout_seconds = 300
 
 # Datasets to evaluate on (including crypto trading and GDPVal benchmarks)
-datasets = ["bizfinbench", "options", "synthetic", "crypto", "gdpval"]
+datasets = ["bizfinbench", "public_csv", "options", "synthetic", "crypto", "gdpval"]
 
 # Sampling strategy: "stratified", "random", "sequential"
 sampling_strategy = "stratified"
 
 # Per-dataset limits (balanced across all sections)
-bizfinbench_limit = 4   # Knowledge retrieval
-options_limit = 4       # Options trading
-synthetic_limit = 4     # Analytical reasoning
+bizfinbench_limit = 2   # Knowledge retrieval
+public_csv_limit = 2    # Knowledge retrieval (FAB public dataset) - needs web search for full capability
+options_limit = 3       # Options trading
+synthetic_limit = 6     # Analytical reasoning (increased for stability)
 crypto_limit = 2        # Crypto trading (2 available)
 gdpval_limit = 4        # Professional tasks (OpenAI GDPVal)
 
+# Test with --store-predicted flag fix in docker-compose template
