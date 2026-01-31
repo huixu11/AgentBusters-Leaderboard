@@ -9,6 +9,6 @@
   },
   {
     "name": "Crypto Trading Details",
-    "query": "SELECT participants.purple_agent AS id, ROUND(r.section_scores.crypto_trading.score, 1) AS \"Crypto Score\", ROUND(r.section_scores.crypto_trading.sub_scores.sharpe, 2) AS \"Sharpe\", ROUND(r.section_scores.crypto_trading.sub_scores.total_return, 2) AS \"Return%\", ROUND(r.section_scores.crypto_trading.sub_scores.max_drawdown, 2) AS \"MaxDD%\" FROM (SELECT participants, results[1] AS r FROM results) WHERE r.section_scores.crypto_trading IS NOT NULL ORDER BY r.section_scores.crypto_trading.score DESC"
+    "query": "SELECT participants.purple_agent AS id, ROUND(r.section_scores.crypto_trading.score, 1) AS \"Score\", ROUND(r.section_scores.crypto_trading.sub_scores.baseline, 1) AS \"Baseline\", ROUND(r.section_scores.crypto_trading.sub_scores.noisy, 1) AS \"Noisy\", ROUND(r.section_scores.crypto_trading.sub_scores.adversarial, 1) AS \"Adversarial\", ROUND(r.section_scores.crypto_trading.sub_scores.meta, 1) AS \"Meta\" FROM (SELECT participants, results[1] AS r FROM results) WHERE r.section_scores.crypto_trading IS NOT NULL ORDER BY r.section_scores.crypto_trading.score DESC"
   }
 ]
