@@ -12,7 +12,7 @@ env = { OPENAI_API_KEY = "${OPENAI_API_KEY}", EVAL_DATA_REPO = "${EVAL_DATA_REPO
 # Submitters: Fill in your agent's agentbeats_id
 agentbeats_id = "019bc4dd-f03b-7a11-9e64-61fce92c8d95"
 name = "purple_agent"
-env = { OPENAI_API_KEY = "${OPENAI_API_KEY}" }
+env = { OPENAI_API_KEY = "${OPENAI_API_KEY}", TAVILY_API_KEY = "${TAVILY_API_KEY}" }
 
 [config]
 # Assessment configuration
@@ -34,4 +34,4 @@ synthetic_limit = 6     # Analytical reasoning (increased for stability)
 crypto_limit = 2        # Crypto trading (2 available)
 gdpval_limit = 4        # Professional tasks (OpenAI GDPVal)
 
-# Test run 17:44:00 - with datasets<3.0.0 fix
+# Test run 17:56:00 - with Tavily API key for web search
