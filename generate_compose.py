@@ -65,7 +65,7 @@ services:
     command: ["--host", "0.0.0.0", "--port", "{green_port}", "--card-url", "http://green-agent:{green_port}", "--eval-config", "{green_eval_config}"]
     environment:{green_env}
     volumes:
-      - ./data/crypto/hidden:/home/agent/data/crypto/hidden:ro
+      - ./data/crypto/hidden:/home/agent/data/crypto/hidden
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:{green_port}/.well-known/agent-card.json"]
       interval: 5s
