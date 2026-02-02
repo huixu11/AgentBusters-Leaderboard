@@ -1,0 +1,817 @@
+{
+  "participants": {
+    "purple_agent": "019c1634-be7d-7200-9102-dc57104f32db"
+  },
+  "results": [
+    {
+      "schema_version": "2.0",
+      "benchmark": "FAB++ Finance Agent Benchmark",
+      "version": "2.0.0",
+      "overall_score": {
+        "score": 35.03,
+        "max_score": 100.0
+      },
+      "section_scores": {
+        "knowledge_retrieval": {
+          "score": 0.0,
+          "weight": 0.2,
+          "weighted_contribution": 0.0,
+          "datasets": [
+            "prbench",
+            "bizfinbench"
+          ],
+          "task_count": 7,
+          "accuracy": 0.0,
+          "sub_scores": {}
+        },
+        "analytical_reasoning": {
+          "score": 100.0,
+          "weight": 0.2,
+          "weighted_contribution": 20.0,
+          "datasets": [
+            "synthetic"
+          ],
+          "task_count": 3,
+          "accuracy": 1.0,
+          "sub_scores": {}
+        },
+        "options_trading": {
+          "score": 27.5,
+          "weight": 0.2,
+          "weighted_contribution": 5.5,
+          "datasets": [
+            "options"
+          ],
+          "task_count": 2,
+          "accuracy": 0.0,
+          "sub_scores": {
+            "pnl_accuracy": 40.0,
+            "risk_management": 30.0,
+            "strategy_quality": 40.0,
+            "greeks_accuracy": 0.0
+          }
+        },
+        "crypto_trading": {
+          "score": 37.65,
+          "weight": 0.2,
+          "weighted_contribution": 7.53,
+          "datasets": [
+            "crypto"
+          ],
+          "task_count": 2,
+          "accuracy": 0.0,
+          "sub_scores": {
+            "noisy": 37.12,
+            "baseline": 37.14,
+            "adversarial": 38.98,
+            "meta": 38.62
+          }
+        },
+        "professional_tasks": {
+          "score": 10.0,
+          "weight": 0.2,
+          "weighted_contribution": 2.0,
+          "datasets": [
+            "gdpval"
+          ],
+          "task_count": 3,
+          "accuracy": 0.0,
+          "sub_scores": {
+            "accuracy": 0.0,
+            "professionalism": 0.0,
+            "completion": 0.0,
+            "format": 0.0
+          }
+        }
+      },
+      "evaluation_metadata": {
+        "purple_agent": "http://purple_agent:9009/",
+        "num_tasks": 17,
+        "num_successful": 10,
+        "conduct_debate": false
+      },
+      "detailed_results": [
+        {
+          "task_id": "bizfinbench_financial_quantitative_computation_en_878",
+          "dataset_type": "bizfinbench",
+          "section": "knowledge_retrieval",
+          "raw_score": 0.0,
+          "normalized_score": 0.0,
+          "is_correct": false,
+          "feedback": "Could not extract number from prediction: 'LLM client not configured. Cannot perform analysis.LLM client not configured. Cannot perform analysis.'"
+        },
+        {
+          "task_id": "prbench_finance_643796de687003869b5de46a",
+          "dataset_type": "prbench",
+          "section": "knowledge_retrieval",
+          "raw_score": 0.0,
+          "normalized_score": 0.0,
+          "is_correct": false,
+          "feedback": "Matched 0/12 criteria"
+        },
+        {
+          "task_id": "SYN_LOGIC_0020",
+          "dataset_type": "synthetic",
+          "section": "analytical_reasoning",
+          "raw_score": 1.0,
+          "normalized_score": 100.0,
+          "is_correct": true,
+          "feedback": "Extracted: Unknown, Expected: Unknown"
+        },
+        {
+          "task_id": "greeks_001",
+          "dataset_type": "options",
+          "section": "options_trading",
+          "raw_score": 27.5,
+          "normalized_score": 27.5,
+          "is_correct": false,
+          "feedback": "Limited P&L analysis. Missing Greeks analysis."
+        },
+        {
+          "task_id": "scenario_0850c8d782597a5c",
+          "dataset_type": "crypto",
+          "section": "crypto_trading",
+          "raw_score": 37.7,
+          "normalized_score": 37.7,
+          "is_correct": false,
+          "feedback": "Final score 37.70 (grade F)"
+        },
+        {
+          "task_id": "17111c03-aac7-45c2-857d-c06d8223d6ad",
+          "dataset_type": "gdpval",
+          "section": "professional_tasks",
+          "raw_score": 0.1,
+          "normalized_score": 10.0,
+          "is_correct": false,
+          "feedback": "Heuristic evaluation (LLM unavailable)"
+        },
+        {
+          "task_id": "bizfinbench_financial_report_analysis_cn_1557",
+          "dataset_type": "bizfinbench",
+          "section": "knowledge_retrieval",
+          "raw_score": 0.0,
+          "normalized_score": 0.0,
+          "is_correct": false,
+          "feedback": "Exact match: False"
+        },
+        {
+          "task_id": "prbench_legal_bbc761434564eb9886704086",
+          "dataset_type": "prbench",
+          "section": "knowledge_retrieval",
+          "raw_score": 0.0,
+          "normalized_score": 0.0,
+          "is_correct": false,
+          "feedback": "Matched 0/15 criteria"
+        },
+        {
+          "task_id": "SYN_LOGIC_0012",
+          "dataset_type": "synthetic",
+          "section": "analytical_reasoning",
+          "raw_score": 1.0,
+          "normalized_score": 100.0,
+          "is_correct": true,
+          "feedback": "Extracted: Unknown, Expected: Unknown"
+        },
+        {
+          "task_id": "greeks_002",
+          "dataset_type": "options",
+          "section": "options_trading",
+          "raw_score": 27.5,
+          "normalized_score": 27.5,
+          "is_correct": false,
+          "feedback": "Limited P&L analysis. Missing Greeks analysis."
+        },
+        {
+          "task_id": "scenario_0094498853a90db4",
+          "dataset_type": "crypto",
+          "section": "crypto_trading",
+          "raw_score": 37.6,
+          "normalized_score": 37.6,
+          "is_correct": false,
+          "feedback": "Final score 37.60 (grade F)"
+        },
+        {
+          "task_id": "7d7fc9a7-21a7-4b83-906f-416dea5ad04f",
+          "dataset_type": "gdpval",
+          "section": "professional_tasks",
+          "raw_score": 0.1,
+          "normalized_score": 10.0,
+          "is_correct": false,
+          "feedback": "Heuristic evaluation (LLM unavailable)"
+        },
+        {
+          "task_id": "bizfinbench_event_logic_reasoning_en_698",
+          "dataset_type": "bizfinbench",
+          "section": "knowledge_retrieval",
+          "raw_score": 0.0,
+          "normalized_score": 0.0,
+          "is_correct": false,
+          "feedback": "Predicted: 'LLMclientnotconfigured.Cannotperformanalysis.LLMclientnotconfigured.Cannotperformanalysis.', Expected: '4,2,1,3'"
+        },
+        {
+          "task_id": "prbench_finance_f4533584c74068621bbd4c16",
+          "dataset_type": "prbench",
+          "section": "knowledge_retrieval",
+          "raw_score": 0.0,
+          "normalized_score": 0.0,
+          "is_correct": false,
+          "feedback": "Matched 0/16 criteria"
+        },
+        {
+          "task_id": "SYN_QUAN_0001",
+          "dataset_type": "synthetic",
+          "section": "analytical_reasoning",
+          "raw_score": 1.0,
+          "normalized_score": 100.0,
+          "is_correct": true,
+          "feedback": "Extracted: Unknown, Expected: Unknown"
+        },
+        {
+          "task_id": "ee09d943-5a11-430a-b7a2-971b4e9b01b5",
+          "dataset_type": "gdpval",
+          "section": "professional_tasks",
+          "raw_score": 0.1,
+          "normalized_score": 10.0,
+          "is_correct": false,
+          "feedback": "Heuristic evaluation (LLM unavailable)"
+        },
+        {
+          "task_id": "bizfinbench_event_logic_reasoning_cn_1365",
+          "dataset_type": "bizfinbench",
+          "section": "knowledge_retrieval",
+          "raw_score": 0.0,
+          "normalized_score": 0.0,
+          "is_correct": false,
+          "feedback": "Predicted: 'LLMclientnotconfigured.Cannotperformanalysis.LLMclientnotconfigured.Cannotperformanalysis.', Expected: '3,1,5,2,6,4'"
+        }
+      ],
+      "config_summary": {
+        "total": 50,
+        "by_dataset": {
+          "bizfinbench": 10,
+          "prbench": 10,
+          "synthetic": 10,
+          "options": 9,
+          "crypto": 2,
+          "gdpval": 9
+        },
+        "by_task_type": {
+          "financial_quantitative_computation": 3,
+          "Corporate Finance": 1,
+          "Administrative Services Managers": 4,
+          "financial_report_analysis": 1,
+          "Litigation & Dispute Resolution": 2,
+          "Accountants and Auditors": 5,
+          "event_logic_reasoning": 3,
+          "Market Microstructure, Trading & Liquidity": 1,
+          "Intellectual Property (IP) Law": 1,
+          "International Finance & FX Hedging": 2,
+          "user_sentiment_analysis": 2,
+          "anomaly_information_tracing": 1,
+          "Risk Management & Stress Testing": 1,
+          "Family Law": 1,
+          "Wealth Management, Financial Planning & Advice": 1
+        },
+        "by_category": {
+          "Numerical Reasoning": 6,
+          "Financial Logic": 9,
+          "Greeks Analysis": 2,
+          "Government": 4,
+          "Qualitative Retrieval": 4,
+          "Professional, Scientific, and Technical Services": 5,
+          "Quantitative Retrieval": 1,
+          "Race to 10M": 1,
+          "Strategy Defense": 1,
+          "Risk Management": 1,
+          "Options Pricing": 2,
+          "P&L Attribution": 1,
+          "Volatility Trading": 1
+        }
+      },
+      "results": [
+        {
+          "example_id": "bizfinbench_financial_quantitative_computation_en_878",
+          "dataset_type": "bizfinbench",
+          "task_type": "financial_quantitative_computation",
+          "language": "en",
+          "question": "You are an expert in data calculation. Please answer the <User Question> based on the provided <Formula List> and <Related Data>, and give your reasons. You need to answer in the specified format.\n###...",
+          "expected": "5.0939%",
+          "predicted": "LLM client not configured. Cannot perform analysis.LLM client not configured. Cannot perform analysis.",
+          "score": 0.0,
+          "is_correct": false,
+          "feedback": "Could not extract number from prediction: 'LLM client not configured. Cannot perform analysis.LLM client not configured. Cannot perform analysis.'",
+          "llm_used": false,
+          "llm_failure": "llm_call_failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-or-v1*************************************************************7bd0. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+        },
+        {
+          "example_id": "prbench_finance_643796de687003869b5de46a",
+          "dataset_type": "prbench",
+          "category": "Numerical Reasoning",
+          "question": "For a nonfinancial with net debt/EBITDA 2.5x, 40% floaters, a four year even maturity ladder and quadratic adjustment costs, how would a persistent 250 bps policy rate shock over six quarters reshape ...",
+          "expected": "With ND/EBITDA 2.5x, 40% floaters, even 4 year ladder, a +250 bps policy shock lifts cash interest b...",
+          "predicted": "LLM client not configured. Cannot perform analysis.LLM client not configured. Cannot perform analysis.",
+          "score": 0.0,
+          "is_correct": false,
+          "correct_count": 0,
+          "total_count": 11,
+          "feedback": "Matched 0/12 criteria",
+          "matched_criteria": [],
+          "triggered_penalties": []
+        },
+        {
+          "example_id": "SYN_LOGIC_0020",
+          "dataset_type": "synthetic",
+          "category": "Financial Logic",
+          "question": "A perpetual bond pays $50 annually. If interest rates rise from 5% to 6%, what is the percentage change in the bond's price?",
+          "expected": "Unknown",
+          "predicted": "Unknown",
+          "predicted_full": "LLM client not configured. Cannot perform analysis.LLM client not configured. Cannot perform analysis.",
+          "score": 1.0,
+          "is_correct": true,
+          "feedback": "Extracted: Unknown, Expected: Unknown",
+          "llm_used": false,
+          "sub_scores": {}
+        },
+        {
+          "example_id": "greeks_001",
+          "dataset_type": "options",
+          "category": "Greeks Analysis",
+          "question": "Calculate the Greeks (Delta, Gamma, Theta, Vega) for a TSLA $250 call option with 21 days to expiration. TSLA is currently at $245, volatility is 55%, and the risk-free rate is 5%. Explain what each G...",
+          "expected": "delta: 0.42; gamma: 0.025; theta: -0.35; vega: 0.28",
+          "predicted": "LLM client not configured. Cannot perform analysis.LLM client not configured. Cannot perform analysis.",
+          "score": 27.5,
+          "is_correct": false,
+          "pnl_accuracy": 40.0,
+          "greeks_accuracy": 0.0,
+          "strategy_quality": 40.0,
+          "risk_management": 30.0,
+          "feedback": "Limited P&L analysis. Missing Greeks analysis.",
+          "llm_used": false,
+          "sub_scores": {
+            "pnl_accuracy": 40.0,
+            "greeks_accuracy": 0.0,
+            "strategy_quality": 40.0,
+            "risk_management": 30.0
+          }
+        },
+        {
+          "example_id": "scenario_0850c8d782597a5c",
+          "dataset_type": "crypto",
+          "scenario_id": "scenario_0850c8d782597a5c",
+          "scenario_name": "scenario_2",
+          "score": 37.7,
+          "baseline_score": 36.96978567771855,
+          "noisy_score": 37.1274385368495,
+          "adversarial_score": 39.385095813665366,
+          "meta_score": 38.96908675475965,
+          "grade": "F",
+          "random_seed": 3670898087,
+          "metrics": {
+            "baseline": {
+              "total_return": -0.001702893843595848,
+              "max_drawdown": 0.001702893843595848,
+              "sharpe": -0.23492441287069454,
+              "win_rate": 0.1111111111111111
+            },
+            "noisy": {
+              "total_return": -0.0017453387560428383,
+              "max_drawdown": 0.0018438737932023662,
+              "sharpe": -0.2218889424362681,
+              "win_rate": 0.0
+            },
+            "adversarial": {
+              "total_return": -0.0011494508645242603,
+              "max_drawdown": 0.0011494508645242603,
+              "sharpe": -0.15842046538857849,
+              "win_rate": 0.35714285714285715
+            },
+            "meta": {
+              "score": 38.96908675475965,
+              "average": 41.93594042962431,
+              "dispersion": 5.9337073497293185,
+              "details": [
+                {
+                  "transform": "identity",
+                  "score": 36.89246221176407,
+                  "metrics": {
+                    "total_return": -0.0017735268111689947,
+                    "max_drawdown": 0.0017735268111689947,
+                    "sharpe": -0.24079950508973072,
+                    "win_rate": 0.1111111111111111
+                  },
+                  "trade_count": 9,
+                  "decision_errors": 0
+                },
+                {
+                  "transform": "scale_1_1",
+                  "score": 38.64942507031489,
+                  "metrics": {
+                    "total_return": -0.0014570315835846486,
+                    "max_drawdown": 0.001565007677298139,
+                    "sharpe": -0.16804257944879042,
+                    "win_rate": 0.3333333333333333
+                  },
+                  "trade_count": 9,
+                  "decision_errors": 0
+                },
+                {
+                  "transform": "invert_returns",
+                  "score": 50.26593400679397,
+                  "metrics": {
+                    "total_return": 0.00012825089650959855,
+                    "max_drawdown": 1.793164525024622e-05,
+                    "sharpe": 0.08772792136576527,
+                    "win_rate": 0.6666666666666666
+                  },
+                  "trade_count": 3,
+                  "decision_errors": 0
+                }
+              ]
+            }
+          },
+          "events": [
+            {
+              "index": 8,
+              "type": "flash_crash"
+            },
+            {
+              "index": 28,
+              "type": "flash_pump"
+            },
+            {
+              "index": 55,
+              "type": "flash_pump"
+            },
+            {
+              "index": 58,
+              "type": "flash_crash"
+            },
+            {
+              "index": 62,
+              "type": "flash_pump"
+            },
+            {
+              "index": 68,
+              "type": "flash_pump"
+            },
+            {
+              "index": 73,
+              "type": "flash_pump"
+            },
+            {
+              "index": 76,
+              "type": "flash_crash"
+            },
+            {
+              "index": 96,
+              "type": "flash_pump"
+            },
+            {
+              "index": 105,
+              "type": "flash_pump"
+            },
+            {
+              "index": 130,
+              "type": "flash_crash"
+            },
+            {
+              "index": 137,
+              "type": "liquidity_crisis"
+            },
+            {
+              "index": 139,
+              "type": "liquidity_crisis"
+            },
+            {
+              "index": 149,
+              "type": "liquidity_crisis"
+            },
+            {
+              "index": 170,
+              "type": "flash_pump"
+            },
+            {
+              "index": 172,
+              "type": "flash_crash"
+            },
+            {
+              "index": 196,
+              "type": "flash_pump"
+            }
+          ],
+          "llm_used": false,
+          "sub_scores": {
+            "baseline": 36.96978567771855,
+            "noisy": 37.1274385368495,
+            "adversarial": 39.385095813665366,
+            "meta": 38.96908675475965
+          },
+          "is_correct": false,
+          "feedback": "Final score 37.70 (grade F)"
+        },
+        {
+          "example_id": "17111c03-aac7-45c2-857d-c06d8223d6ad",
+          "dataset_type": "gdpval",
+          "occupation": "Administrative Services Managers",
+          "sector": "Government",
+          "question": "You are the Administrative Services Manager of a city environmental government agency. The community population has decreased steadily over the last 10 years. You are concerned about eliminating bligh...",
+          "predicted": "LLM client not configured. Cannot perform analysis.LLM client not configured. Cannot perform analysis.",
+          "score": 0.1,
+          "is_correct": false,
+          "feedback": "Heuristic evaluation (LLM unavailable)",
+          "has_reference_files": true,
+          "llm_used": false,
+          "sub_scores": {}
+        },
+        {
+          "example_id": "bizfinbench_financial_report_analysis_cn_1557",
+          "dataset_type": "bizfinbench",
+          "task_type": "financial_report_analysis",
+          "language": "cn",
+          "question": "## \u89d2\u8272\n\u4f60\u662f\u4e00\u4f4d\u4e13\u4e1a\u7684\u8d22\u52a1\u5206\u6790\u5e08\uff0c\u64c5\u957f\u5206\u6790\u4e0a\u5e02\u516c\u53f8\u7684\u57fa\u672c\u8d22\u52a1\u4fe1\u606f\u3002\n\n## \u4efb\u52a1\u80cc\u666f\n\u4f60\u9700\u8981\u5206\u6790\u4e0b\u52175\u4e2a\u516c\u53f8\u7684\u5404\u9879\u6570\u636e\uff0c\u4ece\u4e2d\u9009\u62e9\u8d22\u52a1\u76f8\u5173\u7684\u6570\u636e\uff0c\u7136\u540e\u5206\u67905\u4e2a\u516c\u53f8\u54ea\u4e2a\u8d22\u52a1\u72b6\u51b5\u66f4\u597d\u3002\n\u8d22\u52a1\u72b6\u51b5\u7684\u5206\u6790\u7ef4\u5ea6\u4e3b\u8981\u5305\u62ec\n1. \u8d22\u52a1\u80fd\u529b\uff08\u7acb\u8db3\u5f53\u4e0b\u8003\u91cf\u516c\u53f8\u5728\u5065\u5eb7\u8fd0\u8425\u3001\u521b\u9020\u7ee9\u6548\u65b9\u9762\u7684\u8d22\u52a1\u8868\u73b0\uff09\n2. \u4ef7\u503c\u589e\u503c\uff08\u7740\u773c\u672a\u6765\u8003\u91cf\u516c\u53f8\u4e1a\u7ee9\u589e\u957f\u548c\u4ef7\u503c\u589e\u503c\u7684\u6f5c\u529b\uff09\n3. \u8d22\u52a1\u8d28\u91cf\uff08\u8003\u91cf\u4f01\u4e1a\u7684\u8d44\u4ea7\u8d28\u91cf\u548c\u76c8\u5229\u8d28\u91cf\uff09\n\u4f60\u9700\u8981\u5206\u6790...",
+          "expected": "E,B,A,C,D",
+          "predicted": "LLM client not configured. Cannot perform analysis.LLM client not configured. Cannot perform analysis.",
+          "score": 0.0,
+          "is_correct": false,
+          "feedback": "Exact match: False",
+          "llm_used": false,
+          "llm_failure": "llm_call_failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-or-v1*************************************************************7bd0. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+        },
+        {
+          "example_id": "prbench_legal_bbc761434564eb9886704086",
+          "dataset_type": "prbench",
+          "category": "Qualitative Retrieval",
+          "question": "We're defending a software co in a trade secrets misappropriation case. Plaintiff's expert just produced a 200 page damages report claiming $80M in lost profits, but it's based on a market definition ...",
+          "expected": "1. The ideal response must function as strategic guidance from a seasoned litigation partner. It sho...",
+          "predicted": "LLM client not configured. Cannot perform analysis.LLM client not configured. Cannot perform analysis.",
+          "score": 0.0,
+          "is_correct": false,
+          "correct_count": 0,
+          "total_count": 13,
+          "feedback": "Matched 0/15 criteria",
+          "matched_criteria": [],
+          "triggered_penalties": []
+        },
+        {
+          "example_id": "SYN_LOGIC_0012",
+          "dataset_type": "synthetic",
+          "category": "Financial Logic",
+          "question": "An investor buys a call option with strike $100 for $8 and simultaneously sells a call option with strike $110 for $3 (both on the same underlying, same expiration). What is the maximum profit, maximu...",
+          "expected": "Unknown",
+          "predicted": "Unknown",
+          "predicted_full": "LLM client not configured. Cannot perform analysis.LLM client not configured. Cannot perform analysis.",
+          "score": 1.0,
+          "is_correct": true,
+          "feedback": "Extracted: Unknown, Expected: Unknown",
+          "llm_used": false,
+          "sub_scores": {}
+        },
+        {
+          "example_id": "greeks_002",
+          "dataset_type": "options",
+          "category": "Greeks Analysis",
+          "question": "You hold a portfolio of SPY options: Long 10 $450 calls (delta 0.55), Short 5 $460 calls (delta 0.35), Long 10 $440 puts (delta -0.30). Calculate the portfolio's net delta and recommend a hedge to mak...",
+          "expected": "call_delta_long: 5.5; call_delta_short: -1.75; put_delta: -3.0; net_delta: 0.75; hedge: Short 75 sha...",
+          "predicted": "LLM client not configured. Cannot perform analysis.LLM client not configured. Cannot perform analysis.",
+          "score": 27.5,
+          "is_correct": false,
+          "pnl_accuracy": 40.0,
+          "greeks_accuracy": 0.0,
+          "strategy_quality": 40.0,
+          "risk_management": 30.0,
+          "feedback": "Limited P&L analysis. Missing Greeks analysis.",
+          "llm_used": false,
+          "sub_scores": {
+            "pnl_accuracy": 40.0,
+            "greeks_accuracy": 0.0,
+            "strategy_quality": 40.0,
+            "risk_management": 30.0
+          }
+        },
+        {
+          "example_id": "scenario_0094498853a90db4",
+          "dataset_type": "crypto",
+          "scenario_id": "scenario_0094498853a90db4",
+          "scenario_name": "scenario_1",
+          "score": 37.6,
+          "baseline_score": 37.3036463974487,
+          "noisy_score": 37.1203987999694,
+          "adversarial_score": 38.57161924281518,
+          "meta_score": 38.26380679014089,
+          "grade": "F",
+          "random_seed": 2454587458,
+          "metrics": {
+            "baseline": {
+              "total_return": -0.0016089240512905236,
+              "max_drawdown": 0.0017516515916970476,
+              "sharpe": -0.20828647628144986,
+              "win_rate": 0.1111111111111111
+            },
+            "noisy": {
+              "total_return": -0.0015706826034127517,
+              "max_drawdown": 0.001573647617753988,
+              "sharpe": -0.22344997651301288,
+              "win_rate": 0.15789473684210525
+            },
+            "adversarial": {
+              "total_return": -0.0006723140332796902,
+              "max_drawdown": 0.0009330682499291504,
+              "sharpe": -0.11068646870839653,
+              "win_rate": 0.2857142857142857
+            },
+            "meta": {
+              "score": 38.26380679014089,
+              "average": 41.152451364139274,
+              "dispersion": 5.777289147996773,
+              "details": [
+                {
+                  "transform": "identity",
+                  "score": 37.19369742938293,
+                  "metrics": {
+                    "total_return": -0.0018377117403280863,
+                    "max_drawdown": 0.0020033773200211144,
+                    "sharpe": -0.21602067660065888,
+                    "win_rate": 0.1111111111111111
+                  },
+                  "trade_count": 9,
+                  "decision_errors": 0
+                },
+                {
+                  "transform": "scale_1_1",
+                  "score": 36.942175246539236,
+                  "metrics": {
+                    "total_return": -0.0013392824847127485,
+                    "max_drawdown": 0.0014113547755032587,
+                    "sharpe": -0.23856016384622789,
+                    "win_rate": 0.3
+                  },
+                  "trade_count": 10,
+                  "decision_errors": 0
+                },
+                {
+                  "transform": "invert_returns",
+                  "score": 49.32148141649566,
+                  "metrics": {
+                    "total_return": 1.182659016631078e-05,
+                    "max_drawdown": 4.2010264027885566e-05,
+                    "sharpe": 0.012462351439653711,
+                    "win_rate": 0.6666666666666666
+                  },
+                  "trade_count": 3,
+                  "decision_errors": 0
+                }
+              ]
+            }
+          },
+          "events": [
+            {
+              "index": 26,
+              "type": "liquidity_crisis"
+            },
+            {
+              "index": 27,
+              "type": "flash_pump"
+            },
+            {
+              "index": 30,
+              "type": "flash_pump"
+            },
+            {
+              "index": 82,
+              "type": "flash_pump"
+            },
+            {
+              "index": 84,
+              "type": "liquidity_crisis"
+            },
+            {
+              "index": 97,
+              "type": "flash_crash"
+            },
+            {
+              "index": 100,
+              "type": "flash_crash"
+            },
+            {
+              "index": 109,
+              "type": "flash_crash"
+            },
+            {
+              "index": 158,
+              "type": "flash_pump"
+            },
+            {
+              "index": 171,
+              "type": "flash_crash"
+            },
+            {
+              "index": 175,
+              "type": "flash_crash"
+            }
+          ],
+          "llm_used": false,
+          "sub_scores": {
+            "baseline": 37.3036463974487,
+            "noisy": 37.1203987999694,
+            "adversarial": 38.57161924281518,
+            "meta": 38.26380679014089
+          },
+          "is_correct": false,
+          "feedback": "Final score 37.60 (grade F)"
+        },
+        {
+          "example_id": "7d7fc9a7-21a7-4b83-906f-416dea5ad04f",
+          "dataset_type": "gdpval",
+          "occupation": "Accountants and Auditors",
+          "sector": "Professional, Scientific, and Technical Services",
+          "question": "You are a Senior Staff Accountant at Aurisic. You have been tasked with preparing a detailed amortization schedule for all of Aurisic's prepaid expenses and insurance through April 2025. Since operati...",
+          "predicted": "LLM client not configured. Cannot perform analysis.LLM client not configured. Cannot perform analysis.",
+          "score": 0.1,
+          "is_correct": false,
+          "feedback": "Heuristic evaluation (LLM unavailable)",
+          "has_reference_files": true,
+          "llm_used": false,
+          "sub_scores": {}
+        },
+        {
+          "example_id": "bizfinbench_event_logic_reasoning_en_698",
+          "dataset_type": "bizfinbench",
+          "task_type": "event_logic_reasoning",
+          "language": "en",
+          "question": "\n### Role-playing\nYou are an experienced financial time attribution and root cause analysis expert. Please follow the 'Task Requirements' to summarize and organize the causes and effects of the 'Speci...",
+          "expected": "4,2,1,3",
+          "predicted": "LLM client not configured. Cannot perform analysis.LLM client not configured. Cannot perform analysis.",
+          "score": 0.0,
+          "is_correct": false,
+          "feedback": "Predicted: 'LLMclientnotconfigured.Cannotperformanalysis.LLMclientnotconfigured.Cannotperformanalysis.', Expected: '4,2,1,3'",
+          "llm_used": false,
+          "llm_failure": "llm_call_failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-or-v1*************************************************************7bd0. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+        },
+        {
+          "example_id": "prbench_finance_f4533584c74068621bbd4c16",
+          "dataset_type": "prbench",
+          "category": "Numerical Reasoning",
+          "question": "I need help analysing our execution quality from last week. We had a big redemption hit us and had to sell 180mm across 23 names, mostly large-cap but some mid-cap mixed in. Used our usual TWAP algori...",
+          "expected": "The outline for an ideal response should be as follows:\n\n - User background: Institutional equity tr...",
+          "predicted": "LLM client not configured. Cannot perform analysis.LLM client not configured. Cannot perform analysis.",
+          "score": 0.0,
+          "is_correct": false,
+          "correct_count": 0,
+          "total_count": 16,
+          "feedback": "Matched 0/16 criteria",
+          "matched_criteria": [],
+          "triggered_penalties": []
+        },
+        {
+          "example_id": "SYN_QUAN_0001",
+          "dataset_type": "synthetic",
+          "category": "Quantitative Retrieval",
+          "question": "What was AAPL's EBITDA in fiscal year 2024?",
+          "expected": "Unknown",
+          "predicted": "Unknown",
+          "predicted_full": "LLM client not configured. Cannot perform analysis.LLM client not configured. Cannot perform analysis.",
+          "score": 1.0,
+          "is_correct": true,
+          "feedback": "Extracted: Unknown, Expected: Unknown",
+          "llm_used": false,
+          "sub_scores": {}
+        },
+        {
+          "example_id": "race_001",
+          "dataset_type": "options",
+          "error": "1 validation error for Task\nticker\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.12/v/string_type",
+          "score": 0.0,
+          "is_correct": false
+        },
+        {
+          "example_id": "ee09d943-5a11-430a-b7a2-971b4e9b01b5",
+          "dataset_type": "gdpval",
+          "occupation": "Accountants and Auditors",
+          "sector": "Professional, Scientific, and Technical Services",
+          "question": "As our Senior Staff Accountant in Financial Reporting & Assembly, you\u2019ve been a critical part of the Aurisic team and you\u2019ve spent the last few years in this role focusing on ensuring the accuracy and...",
+          "predicted": "LLM client not configured. Cannot perform analysis.LLM client not configured. Cannot perform analysis.",
+          "score": 0.1,
+          "is_correct": false,
+          "feedback": "Heuristic evaluation (LLM unavailable)",
+          "has_reference_files": true,
+          "llm_used": false,
+          "sub_scores": {}
+        },
+        {
+          "example_id": "bizfinbench_event_logic_reasoning_cn_1365",
+          "dataset_type": "bizfinbench",
+          "task_type": "event_logic_reasoning",
+          "language": "cn",
+          "question": "### \u89d2\u8272\u626e\u6f14\n\u4f60\u662f\u4e00\u4f4d\u7ecf\u9a8c\u4e30\u5bcc\u7684\u91d1\u878d\u4e8b\u4ef6\u903b\u8f91\u4e0e\u6eaf\u6e90\u5206\u6790\u4e13\u5bb6\uff0c\u8bf7\u4f60\u6839\u636e'\u7528\u6237\u95ee\u9898'\u5904\u7406'\u5177\u4f53\u4e8b\u4ef6'\u4e2d\u7684\u4e8b\u4ef6\u4fe1\u606f\uff0c\u5e76\u6309\u7167'\u8f93\u51fa\u683c\u5f0f'\u7ed9\u51fa\u4f60\u7684\u6700\u7ec8\u7ed3\u679c\u3002\n\n### \u7528\u6237\u95ee\u9898\n\u5728\u7ecf\u6d4e\u590d\u82cf\u671f\uff0c\u4e2d\u592e\u94f6\u884c\u63a8\u51fa\u5bbd\u677e\u8d27\u5e01\u653f\u7b56\u4ee5\u523a\u6fc0\u589e\u957f\uff0c\u591a\u5bb6\u4f01\u4e1a\u54cd\u5e94\u73af\u5883\u53d8\u5316\u5bfb\u6c42IPO\u878d\u8d44\u3002\u73b0\u5728\u5bf9\u4ee5\u4e0b\u4e8b\u4ef6\u4e2d\u53ef\u4ee5\u6784\u6210\u56e0\u679c\u4e8b\u4ef6\u6d41\u7684\u5173\u952e\u4e8b\u4ef6\u8fdb\u884c\u903b\u8f91\u6392\u5e8f\u3002\n\n### \u5177\u4f53\u4e8b\u4ef6\n1.   \u4f01\u4e1a\u878d\u8d44\u6210\u672c\u4e0b\u964d\uff0c\u523a\u6fc0\u79d1\u6280\u3001\u6d77\u8fd0\u548c\u65b0\u6750\u6599\u884c\u4e1a\u7684\u6295\u8d44\u6269...",
+          "expected": "3, 1, 5, 2, 6, 4",
+          "predicted": "LLM client not configured. Cannot perform analysis.LLM client not configured. Cannot perform analysis.",
+          "score": 0.0,
+          "is_correct": false,
+          "feedback": "Predicted: 'LLMclientnotconfigured.Cannotperformanalysis.LLMclientnotconfigured.Cannotperformanalysis.', Expected: '3,1,5,2,6,4'",
+          "llm_used": false,
+          "llm_failure": "llm_call_failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-or-v1*************************************************************7bd0. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+        }
+      ]
+    }
+  ]
+}
