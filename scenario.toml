@@ -1,7 +1,7 @@
 # FAB++ (Finance Agent Benchmark Plus Plus) Assessment Configuration
 # AgentBeats Competition 2026 - Team AgentBusters
 # Full evaluation with prbench, synthetic, options, crypto, and GDPVal
-# Docker image rebuilt 2026-02-02 with synthetic + prbench, chmod fix
+# Using OpenRouter API key for Claude 3.5 Sonnet
 
 [green_agent]
 # CIO-Agent Green Agent - FAB++ Evaluator
@@ -14,9 +14,9 @@ env = { OPENAI_API_KEY = "${OPENAI_API_KEY}", EVAL_CONFIG = "config/eval_all.yam
 agentbeats_id = "019c1634-be7d-7200-9102-dc57104f32db"
 name = "purple_agent"
 env = {
-    OPENAI_API_KEY = "${OPENAI_API_KEY}", TAVILY_API_KEY = "${TAVILY_API_KEY}",
+    OPENAI_API_KEY = "${OPENROUTER_API_KEY}", TAVILY_API_KEY = "${TAVILY_API_KEY}",
     OPENAI_API_BASE = "https://openrouter.ai/api/v1",
-    LLM_MODEL = "anthropic/claude-3.5-sonnet"
+    LLM_MODEL = "openai/gpt-4o"
 }
 
 [config]
